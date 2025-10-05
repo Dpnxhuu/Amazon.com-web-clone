@@ -1175,8 +1175,14 @@ footer{
     
 }
 
-.back-to-top {
+.whole-footer > a{
+    text-decoration: none;
     width: 100%;
+}
+
+.back-to-top {
+    
+    /* width: 99vw; */
     height: 50px;
     background-color: #37475A;
     display: flex;
@@ -1358,7 +1364,7 @@ footer{
     font-size: 0.8rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 430px) {
 
     main{
     margin-top: 250px;
