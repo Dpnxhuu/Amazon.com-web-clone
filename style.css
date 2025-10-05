@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    
+    width: 99vw;
 
 }
 
@@ -283,7 +283,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
 
 }
 
@@ -1163,9 +1162,6 @@ main{
 
 /* footer section start from here */
 .whole-footer {
-    /* height: 628px; */
-    /* position: relative; */
-    /* top: 540px; */
     width: 99vw;
 }
 
@@ -1337,7 +1333,7 @@ main{
     color: #DDD;
 }
 
-@media (min-width: 360px) and (max-width: 430px) {
+@media (max-width: 430px) {
 
     body{
         width: 100%;
