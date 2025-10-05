@@ -1341,11 +1341,11 @@ main{
 
     header
     {
-        width: 100vw;
+        width: 1rem;
     }
 
     footer{
-        width: 100vw;
+        width: 1rem;
     }
     
 }
