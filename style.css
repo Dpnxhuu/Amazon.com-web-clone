@@ -6,62 +6,47 @@
     scroll-behavior: smooth;
 }
 
-html {
-    font-size: 1rem;
-}
-
-@media (min-width: 360px) and (max-width: 430px) {
-
-    body {
-  width: 100%;  /* instead of width: 1200px; */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* important for responsiveness */
-}
-
-    
-}
-
 body {
     background-color: #e3e3e3;
-    height: 2000px;
-    width: 1525px;
+    height: 100%;
+    width: 100%;
     background-image: url("Hero_section_img1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* object-fit: fill; */
     background-position-y: 95px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header {
+    
+
 }
 
 .navbar {
 
     height: 60px;
+    width: 99vw;
     background-color: #131A22;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-/* box 1 */
-.amazon-icon-div {
-    margin-left: 10px;
-    width: 118px;
-    height: 50px;
+    /* object-fit: contain; */
 }
 
 .amazon-logo {
-    height: 100%;
-    width: 100%;
+    width: 118px;
+    height: 50px;
+    margin-left: 10px;
     background-image: url("./image-removebg-preview.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
 }
 
 .border:hover {
@@ -236,11 +221,13 @@ body {
     margin-top: 10px;
 }
 
+/* second navigation panel */
 .sec-nav {
     height: 38px;
     background-color: #232f3e;
     display: flex;
-    /* gap: 10px; */
+    align-items: center;
+    gap: 20px;
     font-size: 0.9rem;
 }
 
@@ -248,7 +235,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 15px;
-    gap: 8px;
+    gap: 10px;
 }
 
 .menu-box i {
@@ -258,13 +245,13 @@ body {
 }
 
 .menu-box span {
+    padding-top: 5px;
     color: #ffffff;
     font-weight: 600;
 }
 
-.ops {
-    height: 100%;
-    width: 35%;
+.ops-container {
+    gap: 10px;
     color: #ffffff;
     display: flex;
     justify-content: space-evenly;
@@ -272,29 +259,32 @@ body {
     text-align: center;
 }
 
-.sec-border {
+.ops {
     display: flex;
     align-items: center;
-    height: 100%;
     padding: 8px 5px;
 
 }
 
-.sec-border:hover {
+.ops:hover {
     border: 1.5px solid white;
     border-radius: 3px;
 }
 
 /* hero section */
-
-.hero-section {
-    position: relative;
-    top: 410px;
-    left: 30px;
-    height: 1420px;
+main{
+    margin-top: 250px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.hero-section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+
 }
 
 .card-section {
@@ -348,8 +338,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-row: 2/3;
+    grid-column: 1/2;
 }
-
+.heading {
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 50px;
+    padding-left: 25px;
+    color: #0f1111;
+}
 .anchor-1 a:nth-child(1) {
     display: block;
     width: 300px;
@@ -367,13 +365,7 @@ body {
     font-size: 0.8rem;
 }
 
-.heading {
-    font-size: 0.9rem;
-    width: 100%;
-    line-height: 50px;
-    padding-left: 25px;
-    color: #0f1111;
-}
+
 
 /* shop area box 2 */
 
@@ -382,7 +374,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 .box2grid {
@@ -447,7 +440,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 2/3;
+    grid-column: 3/4;
 }
 
 .box3grid {
@@ -515,7 +509,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 2/3;
+    grid-column: 4/5;
 }
 
 .box4grid {
@@ -584,9 +579,10 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    height: 100%;
-    /* width: 100%; */
+    /* height: 100%; */
     padding-left: 20px;
+    grid-row: 3/4;
+    grid-column: 1/2;
 }
 
 .box5grid {
@@ -666,7 +662,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 3/4;
+    grid-column: 2/3;
 }
 
 .box6grid {
@@ -736,7 +733,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 3/4;
+    grid-column: 3/4;
 }
 
 .box7grid {
@@ -806,7 +804,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 100%;
+    grid-row: 3/4;
+    grid-column: 4/5;
 }
 
 .box8grid {
@@ -1117,13 +1116,13 @@ body {
     grid-row: 6/7;
     grid-column: 1/5;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* width: 10000px; */
 }
 
 .heading-11 {
-    width: 97.5%;
+    width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.11);
     border-bottom: 1px solid rgba(0, 0, 0, 0.11);
     text-align: center;
@@ -1164,10 +1163,10 @@ body {
 
 /* footer section start from here */
 .whole-footer {
-    width: 100vw;
-    height: 628px;
-    position: relative;
-    top: 540px;
+    /* height: 628px; */
+    /* position: relative; */
+    /* top: 540px; */
+    width: 99vw;
 }
 
 .back-to-top {
@@ -1271,7 +1270,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    padding: 40px 0px;
 }
 
 .sub-footer {
@@ -1319,7 +1318,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    padding: 25px 0px;
     background-color: #131A22;
 }
 
@@ -1336,20 +1335,4 @@ body {
     padding-left: 10px;
     text-decoration: none;
     color: #DDD;
-}
-
-.trans {
-    margin: 10px;
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    transition: all 0.3 ease-in;
-}
-
-.trans:hover {
-    height: 110px;
-    width: 110px;
-    background-color: bisque;
-    font-size: 15px;
-    box-shadow: 0px 0px 10px 5px black;
 }
