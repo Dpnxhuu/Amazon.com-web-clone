@@ -1378,7 +1378,7 @@ footer{
     }
 
     body{
-        background-size: 600px;
+        background-size: 650px;
         background-position-y: 155px;
     }
 
@@ -1553,7 +1553,7 @@ main{
 .card-section {
     display: grid;
     grid-template-rows: 100px 420px 420px 420px 420px 420px 420px 420px 420px 285px 285px 200px;
-    grid-template-columns: 385px;
+    grid-template-columns: 390px;
     gap: 5px;
     perspective: 1000px;
     /* width: fit-content; */
