@@ -1339,6 +1339,10 @@ main{
 
 @media (min-width: 360px) and (max-width: 430px) {
 
+    body{
+        width: 100%;
+    }
+
     header
     {
         width: 430px;
