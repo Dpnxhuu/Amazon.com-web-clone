@@ -11,7 +11,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: url("Hero_section_img1.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     /* background-position: center; */
     /* background-position-y: 95px; */
