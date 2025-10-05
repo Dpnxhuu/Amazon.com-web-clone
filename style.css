@@ -1294,12 +1294,13 @@ footer{
 }
 .amazon-icon img
 {
-    height: 40px;
-    width: 100px;
+    height: 35px;
+    width: 90px;
+    padding-top: 10px;
 }
 
 .sub-footer {
-    gap: 10px;
+    gap: 20px;
 }
 
 .sub-footer select {
