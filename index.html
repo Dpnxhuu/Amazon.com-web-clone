@@ -18,11 +18,11 @@
       <div class="navbar" id="top">
         <!-- box 1 -->
         <a href="https://www.amazon.com/ref=nav_logo">
-            <div class="amazon-logo border"></div>
+          <div class="amazon-logo border hide"></div>
         </a>
 
         <!-- box 2 -->
-        <div class="nav-address border">
+        <div class="nav-address border hide">
           <span class="delivery">Deliver to</span>
           <div class="icon-location">
             <div><i class="fa-solid fa-location-dot"></i></div>
@@ -31,7 +31,7 @@
         </div>
 
         <!-- box 3 -->
-        <div class="nav-search">
+        <div class="nav-search hide">
           <select name="" id="">
             <option value="All">All</option>
           </select>
@@ -42,7 +42,7 @@
         </div>
 
         <!-- box 4 -->
-        <div class="nav-lang border">
+        <div class="nav-lang border hide">
           <span class="usa-flag"></span>
 
           <div class="lang-en">
@@ -58,7 +58,7 @@
           href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell"
           style="text-decoration: none"
         >
-          <div class="sign-in border">
+          <div class="sign-in border hide">
             <span class="hello">Hello, sign in</span>
             <select name="" id="" class="same">
               <option value="">Acounts & Lists</option>
@@ -71,7 +71,7 @@
           href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell"
           style="text-decoration: none"
         >
-          <div class="return-order border">
+          <div class="return-order border hide">
             <p><span class="return">Returns</span></p>
             <span class="same">& Orders</span>
           </div>
@@ -82,7 +82,7 @@
           href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart"
           style="text-decoration: none"
         >
-          <div class="shopping border">
+          <div class="shopping border hide">
             <i class="fa-solid fa-cart-shopping"></i>
             <span class="same">Cart</span>
           </div>
@@ -90,26 +90,57 @@
       </div>
 
       <!-- second navigation panel -->
-      <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb"
-        style="text-decoration: none">
+      <!-- <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb"
+        style="text-decoration: none"> -->
 
-        <div class="sec-nav">
-          <div class="menu-box ops">
+      <div class="sec-nav">
+        <div class="row-1 hide-2">
+          <div class="menu-box">
             <i class="fa-solid fa-bars"></i>
-            <span>All</span>
+            <img src="./og amazon icon.png" alt="" />
           </div>
 
-          <div class="ops-container">
-            <p class="ops">Today's Deals</p>
-            <p class="ops">Prime Video</p>
-            <p class="ops">Registry</p>
-            <p class="ops">Gift Cards</p>
-            <p class="ops">Customer Service</p>
-            <p class="ops">Sell</p>
+          <div class="hidden-div-2">
+            <p>Sign&nbsp;in</p>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
-      </a>
+        <div class="row-2 hide-2">
+
+          <div>
+            <select name="" id="">
+            <option value="All">All</option>
+          </select>
+          <input type="text" placeholder="Search Amazon" />
+          <label type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          </div>
+          
+        </div>
+
+        <div class="menu-box ops hide">
+          <i class="fa-solid fa-bars hide"></i>
+          <span class="hide">All</span>
+        </div>
+
+        <div class="ops-container">
+          <p class="ops hide">Today's Deals</p>
+          <p class="ops hide">Prime Video</p>
+          <p class="ops hide">Registry</p>
+          <p class="ops hide">Gift Cards</p>
+          <p class="ops hide">Customer Service</p>
+          <p class="ops hide">Sell</p>
+        </div>
+      </div>
+
+      <!-- </a> -->
+
+      <div class="hidden-panel">
+        <div></div>
+      </div>
     </header>
 
     <main>
@@ -391,23 +422,21 @@
           </div>
 
           <div class="box eleven">
-            
             <div class="heading-11">
               <h2>See personalized recommendations</h2>
               <button type="submit">Sign in</button>
               <p>New Customer?<a href="">Start here</a></p>
             </div>
-
           </div>
         </div>
       </div>
     </main>
-                  <!-- footer section -->
+    <!-- footer section -->
     <footer>
       <div class="whole-footer">
-         <a href="#top">
-              <div class="back-to-top">Back to top</div>
-        </a> 
+        <a href="#top">
+          <div class="back-to-top">Back to top</div>
+        </a>
 
         <div class="footer-1">
           <div class="div-1">
@@ -459,8 +488,9 @@
         </div>
 
         <div class="footer-1-part">
-
-          <div class="amazon-icon"><img src="./og amazon icon.png" alt=""></div>
+          <div class="amazon-icon">
+            <img src="./og amazon icon.png" alt="" />
+          </div>
           <div class="sub-footer">
             <select name="" id="">
               <option value="English">ENGLISH</option>
@@ -469,36 +499,45 @@
             <label for="submit" id="label-1">$USD - U.S. Dollar</label>
             <label for="United States" id="label-2">United States</label>
           </div>
-
         </div>
 
         <div class="footer-3">
-
           <div class="footer-3-child">
-            
             <ul>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
-              <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou">Conditions of Use & Sale</a></li>
-              <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy">Privacy Notice</a></li>
+              <li>
+                <a
+                  href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou"
+                  >Conditions of Use & Sale</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy"
+                  >Privacy Notice</a
+                >
+              </li>
               <li><a href="">Consumer Health Data Privacy Disclosure</a></li>
-              <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba">Interest-Based Ads</a></li>
+              <li>
+                <a
+                  href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba"
+                  >Interest-Based Ads</a
+                >
+              </li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
             </ul>
-            
+
             <p>&copy; 1996-2025, Amazon.com, Inc. or its affiliates</p>
-
           </div>
-
         </div>
-
       </div>
     </footer>
   </body>
