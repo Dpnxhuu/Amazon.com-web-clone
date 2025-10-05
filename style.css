@@ -1336,3 +1336,16 @@ main{
     text-decoration: none;
     color: #DDD;
 }
+
+@media (min-width: 360px) and (max-width: 430px) {
+
+    header
+    {
+        width: 100vw;
+    }
+
+    footer{
+        width: 100vw;
+    }
+    
+}
