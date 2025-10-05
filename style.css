@@ -1554,7 +1554,7 @@ main{
 .card-section {
     display: grid;
     grid-template-rows: 100px 420px 420px 420px 420px 420px 420px 420px 420px 285px 285px 200px;
-    grid-template-columns: 370px;
+    grid-template-columns: 380px;
     gap: 5px;
     perspective: 1000px;
     /* width: fit-content; */
