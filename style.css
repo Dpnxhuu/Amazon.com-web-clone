@@ -10,18 +10,31 @@ html {
     font-size: 1rem;
 }
 
+@media (min-width: 360px) and (max-width: 430px) {
+
+    body {
+  width: 100%;  /* instead of width: 1200px; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+    
+}
+
 body {
     background-color: #e3e3e3;
-    height: 100vh;
+    height: 2000px;
+    width: 1525px;
     background-image: url("Hero_section_img1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    /* object-fit: fill; */
     background-position-y: 95px;
 }
 
 .navbar {
-    
+
     height: 60px;
     background-color: #131A22;
     display: flex;
@@ -1142,8 +1155,9 @@ body {
     color: #042a4f;
 }
 
-.whole-footer
-{
+/* footer section start from here */
+.whole-footer {
+    width: 100vw;
     height: 628px;
     position: relative;
     top: 540px;
@@ -1165,7 +1179,7 @@ body {
 }
 
 .footer-1 {
-   
+
     background-color: #232f3e;
     color: white;
     display: flex;
@@ -1189,14 +1203,16 @@ body {
     font-size: 1rem;
 }
 
-.div-2 li{
+.div-2 li {
     margin: 10px 0px;
 }
+
 .div-2 ul {
     list-style: none;
     font-size: 0.9rem;
     margin-top: 50px;
 }
+
 #head-list-2 {
     font-weight: bold;
     font-size: 1rem;
@@ -1242,8 +1258,8 @@ body {
     margin: 10px 0px;
 }
 
-.footer-1-part{
-    border-top: 1px solid rgba(255,255,255,0.1);
+.footer-1-part {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #232f3e;
     display: flex;
     justify-content: space-evenly;
@@ -1251,13 +1267,11 @@ body {
     height: 100px;
 }
 
-.sub-footer
-{
+.sub-footer {
     gap: 10px;
 }
 
-.amazon-icon
-{
+.amazon-icon {
     background-image: url("./og\ amazon\ icon.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1266,10 +1280,9 @@ body {
     width: 80px;
 }
 
-.sub-footer select
-{
+.sub-footer select {
     padding: 7px;
-    background-color:#232f3e;
+    background-color: #232f3e;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.788);
     border-radius: 2px;
@@ -1277,18 +1290,17 @@ body {
     outline: 1px solid rgba(255, 255, 255, 0.491);
 }
 
-#label-1
-{
+#label-1 {
     outline: 1px solid rgba(255, 255, 255, 0.498);
     padding: 8.5px;
     color: rgba(255, 255, 255, 0.788);
     border-radius: 2px;
     font-size: 0.8rem;
 }
-#label-2
-{
+
+#label-2 {
     outline: 1px solid rgba(255, 255, 255, 0.507);
-    padding: 8.5px ;
+    padding: 8.5px;
     border-radius: 2px;
     color: rgba(255, 255, 255, 0.788);
     font-size: 0.8rem;
@@ -1303,7 +1315,8 @@ body {
     height: 80px;
     background-color: #131A22;
 }
-.footer-3 > div {
+
+.footer-3>div {
     text-align: center;
 }
 
