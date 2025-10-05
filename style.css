@@ -1379,6 +1379,7 @@ footer{
     body{
         /* background-position: contain; */
         background-position-y: 155px;
+        /* background-size: contain; */
     }
 
 .navbar {
@@ -1415,6 +1416,20 @@ footer{
     background-color: #37475A;
     width: 100%;
     height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.hidden-panel div i
+{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(1301%) hue-rotate(188deg) brightness(106%) contrast(105%);
+}
+.hidden-panel select
+{
+    background-color: #37475A;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
 }
 .menu-box
 {
@@ -1519,29 +1534,8 @@ footer{
 }
 
 
-
-.shopping {
-
-    /* padding-top: 10px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 76px;
-    height: 50px;
-}
-
-.shopping i {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(1301%) hue-rotate(188deg) brightness(106%) contrast(105%);
-    font-size: 1.8rem;
-}
-
-.shopping span {
-    margin-top: 10px;
-}
-
-
-    main{
-     margin-top: 140px;
+main{
+     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1559,8 +1553,8 @@ footer{
 .card-section {
     display: grid;
     grid-template-rows: 100px 420px 420px 420px 420px 420px 420px 420px 420px 285px 285px 200px;
-    grid-template-columns: 350px;
-    gap: 18px;
+    grid-template-columns: 430px;
+    gap: 5px;
     perspective: 1000px;
     /* width: fit-content; */
 }
