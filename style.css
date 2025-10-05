@@ -271,7 +271,7 @@ header {
 
 /* hero section */
 main{
-    margin-top: 250px;
+    margin-top: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1408,6 +1408,7 @@ footer{
 .row-1
 {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -1433,7 +1434,8 @@ footer{
 }
 .menu-box
 {
-    width: 100%;
+    display: flex;
+    padding: 2px 5px;
 }
 .menu-box img{
     margin-top: 10px;
@@ -1447,6 +1449,16 @@ footer{
      filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(1301%) hue-rotate(188deg) brightness(106%) contrast(105%);
 }
 
+.menu-box:active
+{
+    outline: 1px solid white;
+    border-radius: 4px;
+    
+}
+.hidden-div-2 i:active
+{
+    color: #9f9f9f;
+}
 .hidden-div-2
 {
     width: 100%;
