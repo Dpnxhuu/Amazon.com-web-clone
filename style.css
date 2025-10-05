@@ -13,8 +13,8 @@ body {
     background-image: url("Hero_section_img1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: center; */
-    /* background-position-y: 95px; */
+    background-position: center;
+    background-position-y: 95px;
 
     display: flex;
     flex-direction: column;
@@ -23,17 +23,17 @@ body {
 }
 
 header {
+    width: 100%;
 
 }
 
 .navbar {
-
+    width: 100%;
     height: 60px;
     background-color: #131A22;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* object-fit: contain; */
 }
 
 .amazon-logo {
@@ -291,6 +291,7 @@ main{
     gap: 18px;
     perspective: 1000px;
 }
+
 
 .card-1 {
     display: flex;
@@ -1115,7 +1116,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 10000px; */
 }
 
 .heading-11 {
@@ -1159,32 +1159,45 @@ main{
 }
 
 /* footer section start from here */
+
+footer{
+
+    width: 100%;
+
+}
 .whole-footer {
-    /* width: 99vw; */
+    background-color: #232f3e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .back-to-top {
+    width: 100%;
     height: 50px;
     background-color: #37475A;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .back-to-top:hover {
-    background-color: #37475ae8;
+    background-color: #37475ac5;
     color: white;
 }
 
 .footer-1 {
-
+    width: 100%;
     background-color: #232f3e;
     color: white;
     display: flex;
     justify-content: space-evenly;
-    height: 400px;
+    height: 350px;
 }
 
 .div-1 li {
@@ -1262,22 +1275,25 @@ main{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #232f3e;
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0px;
+    padding: 40px 0px 40px;
+    margin: 50px 0px 0px;
+}
+.amazon-icon
+{
+    height: 35px;
+    width: 90px;
+}
+.amazon-icon img
+{
+    height: 40px;
+    width: 100px;
 }
 
 .sub-footer {
     gap: 10px;
-}
-
-.amazon-icon {
-    background-image: url("./og\ amazon\ icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 80px;
 }
 
 .sub-footer select {
@@ -1307,34 +1323,184 @@ main{
 }
 
 .footer-3 {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 0px;
+    height: 100px;
+    width: 100%;
     background-color: #131A22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-3>div {
-    text-align: center;
+.footer-3-child
+{
+     color: #dddddd;
+     font-size: 0.8rem;
+     text-align: center;
+     width: 100%;
+}
+.footer-3-child p
+{
+    margin: 5px;
 }
 
-.footer-3 p {
-    padding: 6px 10px;
-    color: #DDD;
+.footer-3-child ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.footer-3 a {
-    padding-left: 10px;
+.footer-3-child a
+{
     text-decoration: none;
-    color: #DDD;
+    color: #dddddd;
+    font-size: 0.8rem;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 720px) {
+.card-section {
+    display: grid;
+    grid-template-rows: 40px 420px 420px 420px 285px 285px 200px;
+    grid-template-columns: 350px 350px 350px;
+    gap: 18px;
+    perspective: 1000px;
+}
 
-   .card-section
-   {
+    .four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.box4grid {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 4fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
 
-   }
+.heading-4 {
+    font-size: 1.3rem;
+    color: #0f1111;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.box4grid span {
+    font-size: 0.8rem;
+    color: #0f1111;
+}
+
+.anchor-4 a {
+    text-decoration: none;
+    color: #2162a1;
+    font-size: 0.8rem;
+    grid-column: 1/3;
+    grid-row: 6/7;
+
+}
+
+.div4img-1 {
+
+    background-image: url("4div3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div4img-2 {
+    background-image: url("4div2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div4img-3 {
+
+    background-image: url("4div4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div4img-4 {
+
+
+    background-image: url("4div1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.box6grid {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 4fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.heading-6 {
+    font-size: 1.3rem;
+    color: #0f1111;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.box6grid span {
+    font-size: 0.8rem;
+    color: #0f1111;
+}
+
+.anchor-6 a {
+    text-decoration: none;
+    color: #2162a1;
+    font-size: 0.8rem;
+    grid-column: 1/3;
+    grid-row: 6/7;
+
+}
+
+.div6img-1 {
+
+    background-image: url("6div1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div6img-2 {
+    background-image: url("6div2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div6img-3 {
+
+    background-image: url("6div3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div6img-4 {
+
+
+    background-image: url("6div4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
 }
