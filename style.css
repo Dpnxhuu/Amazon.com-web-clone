@@ -1553,7 +1553,7 @@ main{
 .card-section {
     display: grid;
     grid-template-rows: 100px 420px 420px 420px 420px 420px 420px 420px 420px 285px 285px 200px;
-    grid-template-columns: 420px;
+    grid-template-columns: 400px;
     gap: 5px;
     perspective: 1000px;
     /* width: fit-content; */
@@ -2422,6 +2422,11 @@ main{
 
 .heading-11 p a:hover {
     color: #042a4f;
+}
+
+.whole-footer
+{
+    font-size: 0.5;
 }
     
 }
