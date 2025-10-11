@@ -322,13 +322,13 @@ main{
 
 .box {
     background-color: #ffffff;
-    transition: all 0.2s linear;
+    /* transition: all 0.2s linear; */
 
 }
 
-.box:hover {
+/* .box:hover {
     transform: translateZ(3px);
-}
+} */
 
 /* shop area box 1 */
 .one {
@@ -1603,13 +1603,13 @@ main{
 
 .box {
     background-color: #ffffff;
-    transition: all 0.2s linear;
+    /* transition: all 0.2s linear; */
 
 }
 
-.box:hover {
+/* .box:hover {
     transform: translateZ(3px);
-}
+} */
 
 /* shop area box 1 */
 .one {
