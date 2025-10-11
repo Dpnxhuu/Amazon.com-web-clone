@@ -1,5 +1,5 @@
 <h1>Amazon.com web clone using html and css</h1>
-<h2>URL: https://amazon-web-clone-dpnshuu.netlify.app/</h2>
+<h2>URL: https://amazon-com-clone-by-dpnshu.onrender.com</h2>
 
 A front-end **Amazon Clone** built using **pure HTML and CSS** for **educational purposes only**.  
 This project replicates the design and layout of Amazon’s homepage to practice web layout techniques, styling, and responsiveness.
